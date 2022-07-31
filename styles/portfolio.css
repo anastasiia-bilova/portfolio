@@ -109,3 +109,7 @@ p {
 .btn-branding-link:hover {
   color: #9b6e98;
 }
+
+.contact-section {
+  padding: 0 400px;
+}
