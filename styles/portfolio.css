@@ -40,10 +40,11 @@ p {
 }
 
 .content {
-  margin: 60px 0 60px 60px;
+  margin: 25px;
 }
 
-.content p {
+.content p,
+li {
   font-size: 14px;
 }
 
@@ -86,6 +87,17 @@ p {
 
 .fourth {
   background-color: #f5fbf5;
+  border-color: #c0f4b7;
+}
+
+.fifth {
+  background-color: #fcf4f4;
+  border-color: #fccccc;
+}
+
+.sixth {
+  background-color: #f3fafe;
+  border-color: #bde6fc;
 }
 
 .horizontal-line h2 {
@@ -112,4 +124,38 @@ p {
 
 .contact-section {
   padding: 0 400px;
+}
+
+.heading-7 {
+  /* display: block;
+  margin-bottom: 3px; */
+  color: #999;
+  font-size: 15px;
+  font-weight: 500;
+  /* line-height: 24px; */
+}
+
+.body-paragraph {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  order: -1;
+  color: #272727;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.body-paragraph.high-emphasis {
+  display: inline-block;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.body-paragraph.low-emphasis {
+  display: inline;
+  margin-left: 20px;
+  padding-left: 0px;
+  color: #666;
 }
