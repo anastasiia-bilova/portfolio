@@ -1,13 +1,14 @@
 :root {
   --default-font-family: "Poppins", sans-serif;
   --heading-font-family: "Eczar", serif;
-  --light-slate: #a8b2d1;
+  --default-color: #212529;
+  --branding-color: #459cf2;
   --fz-xxs: 12.5px;
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 ::selection {
-  background: #459cf2;
+  background: var(--branding-color);
 }
 
 body {
@@ -24,8 +25,6 @@ h4 {
 }
 
 h1 {
-  /* font-family: "Playfair Display", serif; */
-  font-family: var(--heading-font-family);
   font-weight: bold;
   font-size: 64px;
   line-height: 80px;
@@ -55,13 +54,13 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #212529;
+  color: var(--default-color);
   transition: all 100ms ease-in-out;
 }
 
 nav a:hover,
 nav li.active a {
-  color: #459cf2;
+  color: var(--branding-color);
 }
 
 footer {
@@ -70,9 +69,9 @@ footer {
 
 footer .social-links a {
   margin: 0 20px;
-  color: #212529;
+  color: var(--default-color);
   padding: 10px 16px;
-  border: 1px solid #212529;
+  border: 1px solid var(--default-color);
   border-radius: 50%;
   font-size: 18px;
   transition: var(--transition);
@@ -80,7 +79,7 @@ footer .social-links a {
 
 footer .social-links a:hover {
   color: #fff;
-  background: #212529;
+  background: var(--default-color);
 }
 
 footer .social-links a:hover,
@@ -89,7 +88,7 @@ footer .social-links a:focus {
 }
 
 footer .caption a {
-  color: #212529;
+  color: var(--default-color);
   text-decoration: none;
   line-height: 1;
   font-size: var(--fz-xxs);
@@ -116,9 +115,10 @@ li {
 }
 
 .btn-branding {
-  color: #212529;
+  color: var(--default-color);
   border-radius: 4px;
-  border: 1px solid #212529;
+  border: 1px solid;
+  border-color: var(--default-color);
   font-size: 16px;
   line-height: 25px;
   padding: 14px 27px;
@@ -127,8 +127,9 @@ li {
 
 .btn:hover {
   color: #fff;
-  background-color: #459cf2;
-  border: 1px solid #459cf2;
+  background-color: var(--branding-color);
+  border: 1px solid;
+  border-color: var(--branding-color);
 }
 
 .projects-section {
@@ -181,7 +182,7 @@ li {
 }
 
 .btn-branding-link {
-  color: #212529;
+  color: var(--default-color);
   font-size: 15px;
   font-family: var(--default-font-family);
   font-weight: 700;
