@@ -6,6 +6,10 @@
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+::selection {
+  background: #459cf2;
+}
+
 body {
   font-family: var(--default-font-family);
 }
@@ -33,12 +37,35 @@ p {
   line-height: 30px;
 }
 
-footer {
-  margin: 60px 0;
+nav {
+  padding: 20px 0;
 }
 
-footer .contact {
-  margin: 100px 0;
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #212529;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: #459cf2;
+}
+
+footer {
+  margin-top: 80px;
 }
 
 footer .social-links a {
@@ -69,17 +96,18 @@ footer .caption a {
   transition: var(--transition);
 }
 
-.content-container h2 {
-  font-size: 18px;
-  font-family: var(--default-font-family);
-}
-
 .content-container {
-  padding: 80px 20px;
+  padding: 80px 0px;
 }
 
 .content {
+  /* margin: 25px 0 25px 25px; */
   margin: 25px;
+}
+
+.content h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
 }
 
 .content p,
@@ -98,8 +126,9 @@ li {
 }
 
 .btn:hover {
-  color: #9b6e98;
-  border: 1px solid #9b6e98;
+  color: #fff;
+  background-color: #459cf2;
+  border: 1px solid #459cf2;
 }
 
 .projects-section {
@@ -153,12 +182,14 @@ li {
 
 .btn-branding-link {
   color: #212529;
-  font-size: 18px;
-  font-family: var(--heading-font-family);
+  font-size: 15px;
+  font-family: var(--default-font-family);
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .btn-branding-link:hover {
-  color: #9b6e98;
+  color: #459cf2;
 }
 
 .contact-section {
@@ -202,4 +233,48 @@ li {
 .fa-linkedin {
   padding-left: 1px;
   padding-right: 1px;
+}
+
+.emoji {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro__hello .wave-hand {
+  background-image: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/waving-hand_1f44b.png);
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+}
+
+.wave-hand:hover {
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes wave {
+  from {
+    transform: none;
+  }
+  15% {
+    transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
+  }
+  30% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
+  }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
+  }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
+  }
+  to {
+    transform: none;
+  }
 }
