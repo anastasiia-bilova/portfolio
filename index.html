@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Anastasiia is a front-end engineer based in Ukraine.">
+    <meta
+      name="description"
+      content="Anastasiia is a front-end engineer based in Ukraine."
+    />
     <title>Anastasiia Bilova - Software Engineer</title>
     <link
       rel="icon"
@@ -17,14 +20,6 @@
       href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
@@ -47,37 +42,55 @@
     <link rel="stylesheet" href="/styles/portfolio.css" />
   </head>
   <body>
-    <div class="container p-5 py-0">
-      <div class="row g-5 m-4 mt-0">
-        <nav class="d-flex justify-content-between mt-0">
+    <div class="container px-lg-5 px-sm-0 px-xs-0">
+      <div class="row px-lg-5 px-sm-0">
+        <nav
+          class="d-flex justify-content-sm-between justify-content-center mt-0"
+        >
           <a href="/" title="Homepage">
-            <p class="pt-2" style="font-weight: bold">Anastasiia B.</p>
+            <p class="pt-2 d-none d-sm-block" style="font-weight: bold">
+              Anastasiia B.
+            </p>
           </a>
-          <ul>
-            <li class="active">
+          <ul class="pt-1">
+            <li class="active ms-0">
               <a href="/" title="Homepage" class="fw-bold"> Home.</a>
             </li>
             <li>
               <a href="/about.html" title="About Me" class="fw-bold"> About.</a>
             </li>
             <li>
-              <a href="/#work" title="Anastasiia's work" class="fw-bold"> Work.</a>
+              <a href="/#work" title="Anastasiia's work" class="fw-bold">
+                Work.</a
+              >
             </li>
             <li>
-              <a href="/contact.html" title="Contact Anastasiia" class="fw-bold"> Contact.</a>
+              <a
+                href="/contact.html"
+                title="Contact Anastasiia"
+                class="fw-bold"
+              >
+                Contact.</a
+              >
             </li>
           </ul>
         </nav>
       </div>
     </div>
-    <div class="container p-5 py-0">
-      <div class="row g-5 m-4 mt-5">
-        <div class="col-sm-8 mb-5">
-          <div class="content">
-            <h1 class="intro__hello mb-4 mt-5">
+    <div class="container px-lg-5 px-sm-0 px-xs-0">
+      <div class="row g-3 px-lg-5 px-sm-0 mt-xl-5 mt-xs-3">
+        <div class="col-xl-8 col-xs-12 my-5 pe-2">
+          <div class="content-hero">
+            <h1 class="intro__hello mb-4 mt-xs-2 mt-lg-5">
               Hello! <span class="emoji wave-hand"></span><br />
               I'm Anastasiia Bilova
             </h1>
+            <img
+              src="/assets/avatar.jpg"
+              alt=""
+              class="img-fluid rounded-3 mx-auto mb-5 d-block d-sm-none"
+              width="300"
+            />
             <h2 class="mb-4">Front-end developer based in Ukraine</h2>
             <p class="mb-4">
               I’m currently seeking new opportunities in front-end development.
@@ -85,15 +98,15 @@
               skilled in JavaScript and React.
             </p>
             <a
-              href="https://github.com/anastasiia-bilova"
-              class="btn btn-branding shadow-none mt-2 mb-5"
+              href="https://github.com/anastasiia-bilova?tab=repositories"
+              class="btn btn-branding shadow-none mt-2 mb-xs-2 mb-md-5"
               title="See projects"
               target="_blank"
               >See my projects</a
             >
           </div>
         </div>
-        <div class="col-sm-4 mb-5">
+        <div class="col my-5 px-4 d-none d-xl-block">
           <div class="d-flex justify-content-center mt-5">
             <img
               src="/assets/avatar.jpg"
@@ -105,12 +118,12 @@
         </div>
         <div class="col-12">
           <div
-            class="d-flex justify-content-between border-bottom horizontal-line"
+            class="d-flex justify-content-between border-bottom horizontal-line my-3"
           >
-            <h2 class="pt-3" id="work">✍️ Selected Work</h2>
+            <h2 class="heading-2 pt-3" id="work">✍️ Selected Work</h2>
             <a
               href="https://github.com/anastasiia-bilova"
-              class="pt-3 btn-branding-link text-decoration-none"
+              class="pt-3 btn-branding-link d-none d-lg-block"
               title="View GitHub account"
               target="_blank"
             >
@@ -122,9 +135,9 @@
         <div class="col-12">
           <div class="projects-section first">
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col">
                 <div class="content">
-                  <h2 class="mb-4">Weather Application</h2>
+                  <h2 class="mb-3">Weather Application</h2>
                   <p>
                     I’m currently seeking new opportunities in front-end
                     development. I’m open to work remotely and have flexible
@@ -132,7 +145,7 @@
                   </p>
                   <a
                     href="https://sparkly-hamster-5c8b70.netlify.app/"
-                    class="btn-branding-link text-decoration-none"
+                    class="btn-branding-link"
                     title="View project"
                     target="_blank"
                     >View project
@@ -140,7 +153,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col d-none d-lg-block">
                 <div class="d-flex justify-content-center p-5">
                   <img
                     src="/assets/app-screen.png"
@@ -153,26 +166,26 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-xs-12">
           <div class="projects-section second">
             <div class="d-flex flex-column">
-              <div class="content mb-3">
-                <h2 class="mb-4">Dictionary Application</h2>
-                <p class="pe-4">
+              <div class="content">
+                <h2 class="mb-3">Dictionary Application</h2>
+                <p>
                   I’m currently seeking new opportunities in front-end
                   development. I’m open to work remotely and have flexible
                   hours. I’m highly skilled in JavaScript and React.
                 </p>
                 <a
                   href="https://sparkly-hamster-5c8b70.netlify.app/"
-                  class="btn-branding-link text-decoration-none"
+                  class="btn-branding-link"
                   title="View project"
                   target="_blank"
                   >View project
                   <i class="fa-solid fa-arrow-right-long"></i>
                 </a>
               </div>
-              <div class="text-center p-3">
+              <div class="text-center p-3 d-none d-lg-block">
                 <img
                   src="/assets/app-screen.png"
                   alt=""
@@ -183,26 +196,26 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col">
           <div class="projects-section third">
             <div class="d-flex flex-column">
-              <div class="content mb-3">
-                <h2 class="mb-4">Beloved Ukraine Project</h2>
-                <p class="pe-4">
+              <div class="content">
+                <h2 class="mb-3">Beloved Ukraine Project</h2>
+                <p>
                   I’m currently seeking new opportunities in front-end
                   development. I’m open to work remotely and have flexible
                   hours. I’m highly skilled in JavaScript and React.
                 </p>
                 <a
                   href="https://sparkly-hamster-5c8b70.netlify.app/"
-                  class="btn-branding-link text-decoration-none"
+                  class="btn-branding-link"
                   title="View project"
                   target="_blank"
                   >View project
                   <i class="fa-solid fa-arrow-right-long"></i>
                 </a>
               </div>
-              <div class="text-center p-3">
+              <div class="text-center p-3 d-none d-lg-block">
                 <img
                   src="/assets/app-screen.png"
                   alt=""
@@ -216,9 +229,9 @@
         <div class="col-12">
           <div class="projects-section fourth">
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col">
                 <div class="content">
-                  <h2 class="mb-4">Translation Application</h2>
+                  <h2 class="mb-3">Translation Application</h2>
                   <p>
                     I’m currently seeking new opportunities in front-end
                     development. I’m open to work remotely and have flexible
@@ -226,7 +239,7 @@
                   </p>
                   <a
                     href="https://sparkly-hamster-5c8b70.netlify.app/"
-                    class="btn-branding-link text-decoration-none"
+                    class="btn-branding-link"
                     title="View project"
                     target="_blank"
                     >View project
@@ -234,7 +247,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col d-none d-lg-block">
                 <div class="d-flex justify-content-center p-5">
                   <img
                     src="/assets/app-screen.png"
