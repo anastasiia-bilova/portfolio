@@ -16,9 +16,7 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4 {
+h2 {
   color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
@@ -71,10 +69,10 @@ footer {
 footer .social-links a {
   margin: 0 20px;
   color: var(--default-color);
-  padding: 10px 16px;
+  padding: 8px 14px;
   border: 1px solid var(--default-color);
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 17px;
   transition: var(--transition);
 }
 
@@ -110,7 +108,8 @@ footer .caption a {
 }
 
 .content h2,
-.content-hero h2 {
+.content-hero h2,
+.projects-section h2 {
   font-size: 18px;
   font-family: var(--default-font-family);
 }
@@ -128,7 +127,7 @@ li {
   border: 1px solid;
   border-color: var(--default-color);
   font-size: 16px;
-  line-height: 25px;
+  line-height: 24px;
   padding: 14px 27px;
   transition: all 100ms ease-in-out;
 }
@@ -140,41 +139,51 @@ li {
   border-color: var(--branding-color);
 }
 
+.btn-branding-link {
+  color: var(--default-color);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.btn-branding-link:hover {
+  color: var(--branding-color);
+}
+
 .projects-section {
-  border: 1px solid #e1e1e1;
+  border: 1px solid;
   border-radius: 10px;
 }
 
-.projects-section h2 {
-  font-size: 18px;
-  font-family: var(--default-font-family);
-}
-
-.first {
+.light-indigo {
   background-color: #f2f6ff;
+  border-color: #b0c4de;
 }
 
-.second {
+.light-papaya {
   background-color: #fef9f4;
+  border-color: #ffdab9;
 }
 
-.third {
+.light-lavender {
   background-color: #f8f4fc;
+  border-color: #d8bfd8;
 }
 
-.fourth {
+.light-dew {
   background-color: #f5fbf5;
-  border-color: #c0f4b7;
+  border-color: #90ee90;
 }
 
-.fifth {
+.light-rose {
   background-color: #fcf4f4;
-  border-color: #fccccc;
+  border-color: #f6c5c5;
 }
 
-.sixth {
+.light-blue {
   background-color: #f3fafe;
-  border-color: #bde6fc;
+  border-color: #87cefa;
 }
 
 .heading-2 {
@@ -182,33 +191,11 @@ li {
   font-size: 22px;
 }
 
-.horizontal-line h3 {
-  color: #3a3a3a;
-  font-family: var(--heading-font-family);
-  font-size: 1.3rem;
-  font-weight: normal;
-}
-
-.btn-branding-link {
-  color: var(--default-color);
-  font-size: 15px;
-  font-family: var(--default-font-family);
-  font-weight: 700;
-  line-height: 24px;
-  text-decoration: none;
-}
-
-.btn-branding-link:hover {
-  color: #459cf2;
-}
-
-.heading-7 {
-  /* display: block;
-  margin-bottom: 3px; */
+.heading-5 {
   color: #999;
   font-size: 15px;
   font-weight: 500;
-  /* line-height: 24px; */
+  line-height: 24px;
 }
 
 .body-paragraph {
@@ -289,10 +276,6 @@ li {
   h1 {
     font-size: 26px;
     line-height: 2;
-  }
-
-  h3 {
-    font-size: 26px;
   }
 
   nav a {
